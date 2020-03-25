@@ -1,0 +1,10 @@
+{
+  "orgName": "Test Company",
+  "edition": "Partner Developer",
+  "features": ["PlatformCache"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    }
+  }
+}

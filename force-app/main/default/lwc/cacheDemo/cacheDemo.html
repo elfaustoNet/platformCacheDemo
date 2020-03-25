@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Cache Demo">
+        <div class="slds-m-around_small">
+            <lightning-button variant="brand" label="Execute" title="Execute action" onclick={handleClick}></lightning-button>
+            <lightning-button variant="neutral" label="Clear View" title="Clear action" onclick={handleClearClick} class="slds-m-left_small"></lightning-button>
+        </div>
+        <div if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" variant="brand" size="medium"></lightning-spinner>
+        </div> 
+        <template if:true={displayContent}>
+            <div class="slds-m-around_small">
+                <p style="font-weight:bold;"><lightning-input type="checkbox" checked={results.cacheAccessed} disabled label="Cache Accessed"></lightning-input></p>
+                <p ><span style="font-weight:bold;">Begin Time:</span>&nbsp;{results.retrieveStartTime}</p>
+                <p><span style="font-weight:bold;">End Time:</span>&nbsp;{results.retrieveEndTime}</p>
+                <p><span style="font-weight:bold;">Total Time:</span>&nbsp;{results.retrieveTotalTime} milliseconds</p>
+                <br/>
+                <p><span style="font-weight:bold;">Results:</span>&nbsp;{details} </p>
+            </div>
+        </template>
+        <template if:true={displayError}>
+            <p> There was an error, check the logs </p>
+        </template>
+
+    </lightning-card>
+    
+</template>
