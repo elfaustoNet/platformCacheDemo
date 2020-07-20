@@ -10,3 +10,12 @@ package.xml
 
 # LWC Jest
 **/__tests__/**
+**/Profiles/
+force-app/main/default/profiles/Custom%3A Marketing Profile.profile-meta.xml
+Custom%3A Marketing Profile.profile
+force-app/main/default/profiles/Custom%3A Sales Profile.profile-meta.xml
+Custom%3A Sales Profile.profile
+force-app/main/default/profiles/Custom%3A Support Profile.profile-meta.xml
+Custom%3A Support Profile.profile
+Admin.profile
+force-app/main/default/profiles/Admin.profile-meta.xml
