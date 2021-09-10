@@ -18,7 +18,9 @@
             </div>
         </template>
         <template if:true={displayError}>
-            <p> There was an error, check the logs </p>
+            <p> There was an error, check the logs<br/> 
+                {errorMessage}
+            </p>
         </template>
 
     </lightning-card>

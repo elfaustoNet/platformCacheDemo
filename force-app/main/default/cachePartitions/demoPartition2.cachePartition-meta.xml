@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PlatformCachePartition xmlns="http://soap.sforce.com/2006/04/metadata">
     <isDefaultPartition>false</isDefaultPartition>
-    <masterLabel>demoPartition</masterLabel>
+    <masterLabel>demoPartition2</masterLabel>
     <platformCachePartitionTypes>
-        <allocatedCapacity>1</allocatedCapacity>
+        <allocatedCapacity>0</allocatedCapacity>
         <allocatedPurchasedCapacity>0</allocatedPurchasedCapacity>
         <allocatedTrialCapacity>0</allocatedTrialCapacity>
         <cacheType>Organization</cacheType>

@@ -6,6 +6,7 @@ export default class CacheDemo extends LightningElement {
     displayContent = false;
     displayError = false;
     isLoading = false;
+    errorMessage='';
 
    
     handleClick(e) {
@@ -18,12 +19,14 @@ export default class CacheDemo extends LightningElement {
             this.displayContent = true;
             this.displayError = false;
             this.isLoading = false;
+            this.errorMessage = '';
         })
         .catch (error => {
             console.log('erorr ' + JSON.stringify(error));
             this.displayContent = false;
             this.displayError = true;
             this.isLoading = false;
+            this.errorMessage = error.body;
         });
     
 
